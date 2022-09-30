@@ -1,32 +1,22 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[23]:
 
 
-import mysql.connector 
+import mysql.connector
 
 
-# In[20]:
+# In[21]:
 
 
 def connector():
     mydb =mysql.connector.connect(
         host="localhost",
         user="root",
-        password="123456")
-        
+        password="123456",
+        database="fitnessworld")
     return mydb
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
+        
+    
 
